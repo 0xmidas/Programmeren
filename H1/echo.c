@@ -7,7 +7,7 @@ int main(void)
 	float x;
 	double y;
 
-	printf("\n%s\n%s", "Input three charachters,",
+	printf("\n%s\n%s", "Input three characters,",
 		"an int, a float and a double:  ");
 	scanf("%c%c%c%d%f%lf", &c1, &c2, &c3, &i, &x, &y);
 	printf("\nHere is the data that you typed:\n");
