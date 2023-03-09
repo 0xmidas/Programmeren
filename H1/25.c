@@ -3,13 +3,13 @@
 
 #define MAXSTRING 100
 
-void prn_string();
+void prn_string(char*);
 
 int main(void) 
 {
 	char s1[MAXSTRING], s2[MAXSTRING];
 
-	strcpy(s1, "Mary, Mary, quite contrary, \n");
+	strcpy(s1, "Mary, Mary, quite contrart, \n");
 	strcpy(s2, "how does your garden grow?\n");
 	
 	prn_string(s1);
@@ -19,12 +19,9 @@ int main(void)
 	return 0;
 }
 
-
-void prn_string(char *s)
-{
-    int i;
-    for(i = 0; s[i] != '\0'; i++) {
-        putchar(s[i]);
-    }
-    return 0 ;
+void prn_string(ptr) {
+   while (ptr* != "\0") {
+   	putchar(ptr*);
+   	ptr++;
+   }
 }
